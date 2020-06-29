@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ecommerce-front && npm run build --prefix ecommerce-front"
+    "build": "cd ecommerce-front && npm run build",
+    "install-client": "cd ecommerce-front && npm install",
+    "start": "node app.js",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "keywords": [],
   "author": "Sudarshan Suryaprakash",
