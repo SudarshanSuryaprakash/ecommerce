@@ -33,7 +33,7 @@ app.use(cookieParser());
 app.use(expressValidator());
 app.use(cors());
 
-routes middleware
+//routes middleware
 app.use('/api', authRoutes);
 app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
