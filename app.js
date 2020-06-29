@@ -33,13 +33,13 @@ app.use(cookieParser());
 app.use(expressValidator());
 app.use(cors());
 
-// routes middleware
-// app.use('/api', authRoutes);
-// app.use('/api', userRoutes);
-// app.use('/api', categoryRoutes);
-// app.use('/api', productRoutes);
-// app.use('/api', braintreeRoutes);
-// app.use('/api', orderRoutes);
+routes middleware
+app.use('/api', authRoutes);
+app.use('/api', userRoutes);
+app.use('/api', categoryRoutes);
+app.use('/api', productRoutes);
+app.use('/api', braintreeRoutes);
+app.use('/api', orderRoutes);
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
